@@ -1,6 +1,6 @@
 # Weather React App PWA
 
-An clone application based on Project of [adrianhajdin](https://github.com/adrianhajdin, 'JavaScript Mastery')
+An clone application based on Project of [adrianhajdin](https://github.com/adrianhajdin 'JavaScript Mastery')
 
 ## Live Preview
 
