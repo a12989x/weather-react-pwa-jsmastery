@@ -3,14 +3,9 @@
     "name": "Weather App PWA",
     "icons": [
         {
-            "src": "favicon.ico",
-            "sizes": "64x64 32x32 24x24 16x16",
-            "type": "image/x-icon"
-        },
-        {
-            "src": "logo.ico",
-            "sizes": "460x460",
-            "type": "image/png"
+            "src": "/img/logo.png",
+            "type": "image/png",
+            "sizes": "1024x1024"
         }
     ],
     "start_url": ".",
