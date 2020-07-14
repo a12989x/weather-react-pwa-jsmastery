@@ -1,11 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 body {
     font-family: 'Poppins', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.App {
+    min-height: 100vh;
+    padding: 2rem 3rem;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    font-size: 1.1rem;
+    color: #2b2b2b;
+    padding: 0 1.5rem;
+    height: 5vh;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    width: 90vw;
+    max-width: 400px;
+    background: rgba($color: #ffffff, $alpha: 0.5);
+    border: none;
+    border-top: none;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    position: absolute;
+    top: 0;
+    transition: 0.3s;
+
+    &:hover {
+        background: rgba($color: #ffffff, $alpha: 0.6);
+    }
+
+    &:focus {
+        background: rgba($color: #ffffff, $alpha: 0.7);
+    }
+}
+
+.city {
+    // height: 40vh;
+    text-align: center;
+
+    &__name,
+    &__temp,
+    &__info {
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+        transition: 0.3s;
+        border: 1px solid transparent;
+    }
+
+    &__name {
+        font-weight: 500;
+        margin-bottom: 1rem;
+
+        sup {
+            font-size: 1rem;
+            font-weight: 400;
+            background-color: #aa50ff;
+            padding: 0.1rem 0.8rem;
+            border-radius: 2rem;
+        }
+
+        &:hover {
+            border-color: #ffffff;
+        }
+    }
+
+    &__temp {
+        font-size: 5rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+
+        sup {
+            font-size: 2rem;
+            transform: translateY(-5px);
+            font-weight: 400;
+            background-color: #aa50ff;
+            padding: 0.1rem 0.8rem;
+            border-radius: 2rem;
+        }
+
+        &:hover {
+            border-color: #ffffff;
+        }
+    }
+
+    &__info {
+        img {
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            background-color: rgba($color: #000000, $alpha: 0.1);
+        }
+
+        p {
+            text-transform: capitalize;
+        }
+
+        &:hover {
+            border-color: #ffffff;
+        }
+    }
 }
